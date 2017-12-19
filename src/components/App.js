@@ -25,7 +25,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://ticker.altcast.io/list')
+    axios.get('http://localhost:4000/')
       .then(result => {
         this.setState({ticks: this.parseData(result.data)});
       })

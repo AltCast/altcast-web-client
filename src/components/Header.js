@@ -4,10 +4,15 @@ import './Header.css';
 
 class Header extends Component {
   render() {
-    let icon = <img src={logo} className="Header-logo" alt="AltCast Dashboard Logo" />;
 
     return (
       <div className="Header">
+        <div className="left-menu">
+          <img src={logo} className="Header-logo" alt="AltCast Dashboard Logo" />
+        </div>
+        <div className="right-menu">
+          <p>menu aqui</p>
+        </div>
       </div>
     );
   }

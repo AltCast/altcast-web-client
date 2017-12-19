@@ -8,7 +8,7 @@ class ExchangeGroup extends Component {
     const { ticks } = this.props;
 
     return (
-      <div className="ExchangeGroup">
+      <div className="ExchangeGroup row">
         {ticks.map(tick => {
           return <Exchange name={tick.exchange} data={tick.ticks} key={tick.exchange} />;
         })}
